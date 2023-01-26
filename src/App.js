@@ -1,10 +1,20 @@
-import './App.css';
+import "./App.css";
+import React from "react";
+import Home from "./pages/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SearchPage from "./pages/SearchPage";
+import Search from "@mui/icons-material/Search";
 
 function App() {
   return (
-    <div className="App">
-      Hello Programmer
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/search" element={<SearchPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
