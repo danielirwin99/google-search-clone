@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import AppsIcon from "@mui/icons-material/Apps";
 import { Avatar } from "@mui/material";
 import Logo from "../assets/google-logo.jpg";
+import Search from "../components/Search";
 
 const Home = () => {
   return (
@@ -25,7 +26,7 @@ const Home = () => {
       <div className="home__body">
         <img src={Logo} alt="" className="google__logo" />
         <div className="home__inputContainer">
-          
+          <Search  />
         </div>
       </div>
     </div>

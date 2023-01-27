@@ -3,7 +3,6 @@ import React from "react";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SearchPage from "./pages/SearchPage";
-import Search from "@mui/icons-material/Search";
 
 function App() {
   return (
